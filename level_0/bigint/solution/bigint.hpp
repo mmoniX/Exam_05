@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <algorithm>
 
 class bigint
 {
@@ -9,10 +10,12 @@ class bigint
     public:
         bigint();
         bigint(unsigned long long n);
-        bigint(std::string digit);
+        bigint(std::string digits);
         bigint(const bigint& copy);
         bigint& operator=(const bigint& copy);
         ~bigint();
+
+        std::string getDigits() const;
 
         bigint& operator++();
         bigint operator++(int);

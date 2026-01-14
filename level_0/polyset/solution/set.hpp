@@ -13,7 +13,7 @@ class set
 
         void insert(int value);
         void insert(int *array, int size);
-        void print();
+        void print() const;
         void clear();
 
         bool has(int value) const;

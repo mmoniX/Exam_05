@@ -21,7 +21,7 @@ void set::insert(int value)
         bag.insert(value);
 }
 
-void set::insert(int *array, int size);
+void set::insert(int *array, int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -30,7 +30,7 @@ void set::insert(int *array, int size);
     }
 }
 
-void set::print()
+void set::print() const
 {
     bag.print();
 }
