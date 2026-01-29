@@ -1,6 +1,4 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "life.h"
 
 int main(int ac, char **av)
 {
